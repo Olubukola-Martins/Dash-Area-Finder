@@ -1,8 +1,9 @@
+import { Button } from 'antd'
 import React from 'react'
 
 const LoginBtn = () => {
   return (
-    <div>LoginBtn</div>
+    <Button type='text' size='small' className='text-[#557FF2] font-semibold'>LOGIN</Button>
   )
 }
 
