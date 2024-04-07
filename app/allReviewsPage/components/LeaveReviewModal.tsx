@@ -103,12 +103,12 @@ const LeaveReviewModal = ({
         console.log("res", response);
       } catch (error) {
         console.error("Error posting data:", error);
-        openNotification({
-          title: "Error",
-          state: "error",
-          description: "error",
-          duration: 4.0,
-        });
+        // openNotification({
+        //   title: "Error",
+        //   state: "error",
+        //   description: "error",
+        //   duration: 4.0,
+        // });
       }
     } else {
       return;
