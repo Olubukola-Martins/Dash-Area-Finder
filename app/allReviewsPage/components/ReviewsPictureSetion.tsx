@@ -1,19 +1,17 @@
-import { Image } from "antd";
+import Image from "next/image";
 import React from "react";
 
 const ReviewsPictureSetion = () => {
   return (
     <div className="grid grid-cols-2 gap-3 w-fit h-fit max-sm:gap-1">
       <Image
-        preview={false}
-        src="./place1.png"
+        src="/place1.png"
         alt="place image"
         width={200}
         height={200}
         className="rounded-xl max-sm:scale-[80%]"
       />
       <Image
-        preview={false}
         src="/place2.png"
         alt="place2 image"
         width={200}
@@ -21,7 +19,6 @@ const ReviewsPictureSetion = () => {
         className="rounded-xl max-sm:scale-[80%]"
       />
       <Image
-        preview={false}
         src="/place3.png"
         alt="place3 image"
         width={200}
@@ -30,7 +27,6 @@ const ReviewsPictureSetion = () => {
       />
       <div className="relative">
         <Image
-          preview={false}
           src="/place1.png"
           alt="place1 image"
           width={200}
