@@ -21,7 +21,7 @@ const ReviewCard = ({ review, rating, anonymous }: { review?: string; rating?: n
             className="flex-grow h-fit"
           />
           <div className="flex gap-1 ">
-            <h3 className="text-xs font-medium">{anonymous ? "Anonymous" : `James T.`}</h3>
+            <h3 className="text-xs font-medium">{anonymous ? "Anonymous" : `Olubukola M`}</h3>
             <p className="text-[10px]">{review ? "Just now" : "5 months ago"}</p>
           </div>
         </div>

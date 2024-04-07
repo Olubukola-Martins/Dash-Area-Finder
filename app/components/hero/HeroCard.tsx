@@ -21,7 +21,7 @@ const HeroCard = ({ tagColor }: { tagColor: "magenta" | "gold" }) => {
             className="flex-grow h-fit"
           />
           <div className="flex flex-col gap-[2px]">
-            <h3 className="text-xs font-medium">James T.</h3>
+            <h3 className="text-xs font-medium">Olubukola M.</h3>
             <p className="text-[10px]">3 months ago</p>
           </div>
         </div>
