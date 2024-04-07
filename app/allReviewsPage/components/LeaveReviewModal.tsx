@@ -71,6 +71,14 @@ const LeaveReviewModal = ({
   const handleSubmit = async (value: IPostBody) => {
     const formData: IPostBody = value;
     if (formData) {
+      // remove later
+      openNotification({
+        title: "Success",
+        state: "success",
+        description: "Review successfully added",
+        duration: 4.0,
+      });
+
       try {
         const response = await fetch("http://localhost:3000/api/reviews", {
           method: "POST",
@@ -82,26 +90,25 @@ const LeaveReviewModal = ({
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-          setPostSucess((prev) => !prev);
-                  openNotification({
-                    title: "Success",
-                    state: "success",
-                    description: "Review successfully added",
-                    duration: 4.0,
-                  });
+        setPostSucess((prev) => !prev);
+        openNotification({
+          title: "Success",
+          state: "success",
+          description: "Review successfully added",
+          duration: 4.0,
+        });
 
         form.resetFields();
         console.log("Data posted successfully");
         console.log("res", response);
       } catch (error) {
-          console.error("Error posting data:", error);
-                  openNotification({
-                    title: "Error",
-                    state: "error",
-                    description: "error",
-                    duration: 6.0,
-                  });
-
+        console.error("Error posting data:", error);
+        openNotification({
+          title: "Error",
+          state: "error",
+          description: "error",
+          duration: 4.0,
+        });
       }
     } else {
       return;
@@ -131,10 +138,8 @@ const LeaveReviewModal = ({
   useEffect(() => {
     setIsClient(true);
   }, []);
-    
-    useEffect(() => {
-    }, [disabled])
-    
+
+  useEffect(() => {}, [disabled]);
 
   if (!isClient) {
     return null; // Render nothing on the server-side
