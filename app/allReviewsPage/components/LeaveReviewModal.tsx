@@ -1,4 +1,5 @@
 import { IPostBody } from "@/app/lib/data";
+import { openNotification } from "@/app/utils/OpenNotification";
 import {
   Button,
   Checkbox,
@@ -81,12 +82,26 @@ const LeaveReviewModal = ({
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        setPostSucess((prev) => !prev);
+          setPostSucess((prev) => !prev);
+                  openNotification({
+                    title: "Success",
+                    state: "success",
+                    description: "Review successfully added",
+                    duration: 4.0,
+                  });
+
         form.resetFields();
         console.log("Data posted successfully");
         console.log("res", response);
       } catch (error) {
-        console.error("Error posting data:", error);
+          console.error("Error posting data:", error);
+                  openNotification({
+                    title: "Error",
+                    state: "error",
+                    description: "error",
+                    duration: 6.0,
+                  });
+
       }
     } else {
       return;
