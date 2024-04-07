@@ -1,0 +1,16 @@
+.cardArea{
+ mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+/* -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%); */
+background-color: rgb(234, 232, 232);
+width: fit-content;
+height: 90svh;
+/* display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap:1.25rem; */
+overflow-y: hidden; 
+padding-left: 2px;
+padding-right: 2px;
+/* position: relative; */
+/* position: absolute;
+top:-100px; */
+}

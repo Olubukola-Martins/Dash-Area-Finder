@@ -1,10 +1,11 @@
-import NavBar from "./components/nav/NavBar";
+import AllReviewsPage from "./allReviewsPage/page";
 import HomePage from "./homePage/page";
 
 export default function Home() {
   return (
- <div className="mx-auto w-[86.11%] ">
-  <NavBar/>
-<HomePage />
- </div> );
+    <div className=" w-[86.11%] mx-auto ">
+      <HomePage />
+        {/* <AllReviewsPage /> */}
+    </div>
+  );
 }

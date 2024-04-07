@@ -5,6 +5,8 @@
 :root {
   --foreground-rgb: #000;
   --background-color: #FAFCFD;
+  --primary-color:#3366FF;
+  --header-bg-color:#F2F6FD;
   /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
 }
@@ -20,9 +22,20 @@
 body {
   color: var(--foreground-rgb);
   background-color: var(--background-color);
-  padding: 1rem 0;
 }
-
+.ant-select-tree-list-holder-inner{
+  display:  grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  row-gap: 0;
+  font-size: small;
+}
+.ant-select-tree-list{
+  max-height: 100px !important;
+  padding: 0;
+}
+/* .mainBody {
+  background-color: var(--background-color);
+} */
 
 @layer utilities {
   .text-balance {
@@ -31,17 +44,5 @@ body {
 }
 
 
-/* Auto layout */
-/* display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 32px; */
-
-/* position: absolute;
-width: 1240px;
-height: 1024px;
-left: 100px;
-top: 0px; */
 
 
