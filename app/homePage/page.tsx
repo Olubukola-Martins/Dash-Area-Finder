@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <>
       {ReactDOM.createPortal(
-        <div className=" h-svh flex flex-col overflow-y-hidden w-[86.11%] mx-auto">
+        <div className=" h-svh flex flex-col lg:overflow-y-hidden w-[86.11%] mx-auto">
           <NavBar />
           <Hero />
         </div>,

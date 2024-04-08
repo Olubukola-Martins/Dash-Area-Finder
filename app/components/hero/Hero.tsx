@@ -5,7 +5,7 @@ import HeroCardSection from './HeroCardSection'
 
 const Hero = () => {
   return (
-    <div className="flex lg:flex-row flex-col gap-3 justify-between w-full">
+    <div className="flex lg:flex-row flex-col gap-3 justify-between w-full mt-1 ">
       <HeroSearchSection />
       <div className='max-lg:mx-auto'>
         <HeroCardSection />

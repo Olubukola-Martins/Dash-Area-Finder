@@ -6,12 +6,12 @@ import Link from "next/link";
 const HeroSearchSection = () => {
   return (
     <>
-        <div className="mt-[10vh] flex flex-col gap-y-8">
+        <div className="lg:mt-[10vh] mt-[6vh] flex flex-col gap-y-8">
           <div className="flex flex-col gap-8 max-w-[507px] ">
-            <h1 className="font-bold text-[4rem] leading-[4.75rem]">
+            <h1 className="font-bold text-5xl md:text-[4rem] leading-[3.25rem] md:leading-[4.75rem]">
               Find a place you will love to live!
             </h1>
-            <h4 className="text-2xl">
+            <h4 className="text-xl md:text-2xl">
               See through the lenses of people who have lived or visited the
               neighbourhood you might have in mind.
             </h4>
